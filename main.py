@@ -8,19 +8,19 @@ app = FastAPI()
 # Mapa de tarefas — adicione novas aqui
 TASKS = {
     "t01": {"nome": "Bom dia Camila ☀️",         "msg": "Rodar tarefa 01"},
-    "t02": {"nome": "Avisos de Agenda ",         "msg": "Rodar tarefa 02"},
-    "t03": {"nome": "Monitor NF-e ",             "msg": "Rodar tarefa 03"},
-    "t04": {"nome": "Briefing Mercado ",         "msg": "Rodar tarefa 04"},
-    "t05": {"nome": "Resumo Mensagens ",    "msg": "Rodar tarefa 05"},
-    "t06": {"nome": "Lembrete Alongamento ",     "msg": "Rodar tarefa 06"},
-    "t07": {"nome": "Reflexão Noturna ",         "msg": "Rodar tarefa 07"},
-    "t08": {"nome": "Reset Alimentação ",        "msg": "Rodar tarefa 08"},
-    "t09": {"nome": "Resumo Semanal ",           "msg": "Rodar tarefa 09"},
-    "t10": {"nome": "Análise Mensal ",           "msg": "Rodar tarefa 10"},
-    "t11": {"nome": "Lista Tarefa + Limpeza ",  "msg": "Rodar tarefa 11"},
+    "t02": {"nome": "Avisos de Agenda 📅",         "msg": "Rodar tarefa 02"},
+    "t03": {"nome": "Monitor NF-e 📦",             "msg": "Rodar tarefa 03"},
+    "t04": {"nome": "Briefing Mercado 📊",         "msg": "Rodar tarefa 04"},
+    "t05": {"nome": "Resumo Mensagens Loja 📱",    "msg": "Rodar tarefa 05"},
+    "t06": {"nome": "Lembrete Alongamento 🧘",     "msg": "Rodar tarefa 06"},
+    "t07": {"nome": "Reflexão Noturna 🌙",         "msg": "Rodar tarefa 07"},
+    "t08": {"nome": "Reset Alimentação 🥤",        "msg": "Rodar tarefa 08"},
+    "t09": {"nome": "Resumo Semanal 📝",           "msg": "Rodar tarefa 09"},
+    "t10": {"nome": "Análise Mensal 📆",           "msg": "Rodar tarefa 10"},
+    "t11": {"nome": "Agenda + Status + Limpeza 📋","msg": "Rodar tarefa 11"},
 }
 
-ZAPIER_WEBHOOK_URL = os.getenv("ZAPIER_WEBHOOK_URL", "https://hook.us2.make.com/447kl4p8k3oa22say6tkeee1ayyivpor")
+ZAPIER_WEBHOOK_URL = os.getenv("ZAPIER_WEBHOOK_URL", "https://hook.us2.make.com/ykgwvvfa4jvxqi6jftdjj5g3cgnw129p")
 
 @app.get("/", response_class=HTMLResponse)
 async def index():
